@@ -1,0 +1,16 @@
+Report for P2:
+
+My assignment is in working condition, but begins dropping packets as the program runs.
+
+When running ./mydemo 60 | grep FPDS, I consistently get the same values, 22|14|36.
+Since 22+14 = 36, and I have not seen any values which != 36, I am happy with this.
+I believe I could improve on it, but it is 11:48PM :)
+
+My use of a 2D buffer was thanks to the suggestions of Freddy Lopez and Ash (don't know their last name). I had previously implemented this as pidBuffers[MAX_PID + 1] but
+forgot to fully implement it. They reminded me.
+
+My diagram is simple, I sped through drawing it. I have shown a simple dataflow betweenBB, ND, and FPDS, noting how they acknowledge one another. I have also shown a simple
+logic flowchart based on key fields. Hopefully it is adequate.
+
+Cheers,
+Carter
